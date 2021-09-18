@@ -1,0 +1,6 @@
+version: 0.0
+os: linux
+files:
+  - source: /icinga2
+    destination: /etc/
+file_exists_behavior: OVERWRITE

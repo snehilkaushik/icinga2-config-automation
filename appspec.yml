@@ -2,5 +2,11 @@ version: 0.0
 os: linux
 files:
   - source: icinga2
-    destination: /etc
+    destination: /home/centos
 file_exists_behavior: OVERWRITE
+hooks:
+  BeforeInstall:
+    - location: Scripts/copy.sh
+  AfterInstall:
+    - location: Scripts/restart.sh
+      timeout: 180

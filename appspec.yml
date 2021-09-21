@@ -1,6 +1,6 @@
 version: 0.0
 os: linux
 files:
-  - source: icinga2/test.txt
-    destination: /home/centos/git/
+  - source: icinga2
+    destination: /etc
 file_exists_behavior: OVERWRITE
